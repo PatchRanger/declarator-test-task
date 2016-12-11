@@ -1,0 +1,175 @@
+/* Меню выбора документа в году */
+div.documents_menu {    
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    border-radius: 9px;
+    border-color: #d8dcd7;
+    border: 5px solid #d8dcd7;
+    padding: 1px;
+    background-color: #fcfcfc;
+    margin-top: 14px;
+}
+
+div.documents_menu table {
+}
+
+div.documents_menu td {
+    background-color: #eff0ec;
+    text-align: center;
+}
+
+div.documents_menu td.active {
+    background-color: #fff;
+}
+
+div.documents_menu a, div.documents_menu a:hover {
+    color: #fd3526;
+    text-decoration: none;
+}
+
+div.documents_menu a {
+    
+}
+
+div.documents_menu .title {
+    width: 485px;
+    padding-top: 7px;
+    padding-bottom: 8px;
+    font-size: 19px;
+}
+
+/* Таблица с расшифровками */
+table.document_transcription {
+    width: 100%;
+    margin-top: 25px;
+    margin-bottom: 46px;
+    border-bottom: 1px solid #ff3000;
+}
+
+table.document_transcription tr.even {
+    background-color: #f7f8f5;
+    border-top: 1px dotted #b8b9b7;
+    border-bottom: 1px dotted #b8b9b7;
+}
+
+table.document_transcription th {
+    border-top: 1px solid #ff3000;
+    border-bottom: 1px solid #ff3000;
+    font-weight: normal;
+    padding: 11px 15px 11px 10px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+table.document_transcription td {
+    vertical-align: top;
+    padding: 8px 10px 19px 10px;
+    font-size: 13px;
+}
+
+/* Ячейка с информацией о человеке */
+table.document_transcription td.person {
+}
+
+/* Строчка с именем чиновника в таблице */
+table.document_transcription td.person div.person_name {
+    white-space: nowrap;
+    font-weight: bold;
+    font-size: 14px;
+}
+table.document_transcription td.person div.person_name div.family_name {
+    font-size: 16px;
+}
+
+/* Строчка с названием органа власти */
+table.document_transcription td.person div.office {
+    font-weight: bold;
+    font-size: 14px;
+}
+/* Строчка с партией */
+table.document_transcription td.person div.party {
+    margin-top: 5px;
+    white-space: nowrap;
+}
+
+/* Блоки с текстовыми кнопками скрыть/показать подробности */
+.document_transcription .show_details {
+    margin-top: 7px;
+    color: #0082aa;
+    text-decoration: underline;
+    font-size: 12px;
+    cursor: pointer;
+}
+
+/* Ячейка с информацией о доходе */
+table.document_transcription td.income {
+    white-space: nowrap;
+    font-size: 14px;
+    text-align: right;
+}
+
+/* Ячейка с информацией о недвижимости */
+table.document_transcription td.real_estate {
+    /*white-space: nowrap;*/
+}
+table.document_transcription td.real_estate  div.total_square {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Ячейка с информацией о транспортных средствах */
+table.document_transcription td.vehicles {
+    /*white-space: nowrap;*/
+}
+table.document_transcription td.vehicles div.total_count {
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/* Информация о счетах */
+table.document_transcription td.savings {
+    white-space: nowrap;
+    font-size: 14px;
+    text-align: right;
+    font-weight: bold;
+}
+
+/* Информация об акция и ценных бумагах */
+table.document_transcription td.stocks {
+    font-size: 14px;
+    text-align: center;
+}
+
+/* Строчка в таблице с подробной информацией о собственности */
+.document_transcription tr.section_detailed {
+    display: none;
+}
+
+.decoded {
+    text-align: right;
+    padding: 18px 0 0 0;
+    font-size: 12px;
+}
+
+/* Блок с кнопкой добавления декларации */
+.document_add_button {
+    margin-left: 29px;
+    margin-top: 23px;
+}
+
+table.document_transcription td.person div.person_name div.family_name h4 {
+    display: inline;
+}
+
+table.document_transcription td.person div.person_name a h4 {
+    display: inline;
+}
+
+.js-tab-active {
+    cursor: default;
+}
+
+.js-tab-active:hover {
+    color: inherit!important;
+}
+

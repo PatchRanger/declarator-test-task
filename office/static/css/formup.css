@@ -1,0 +1,200 @@
+﻿/* Стили при работе со всплывающими формами */
+
+/* Затемняющий страницу блок */
+#opaco_block {
+     background-color: #000000;
+     left: 0;
+     -ms-filter:"progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";/* IE8 */
+     filter:progid:DXImageTransform.Microsoft.Alpha(opacity = 70); /* IE5+ */
+     filter: alpha(opacity=70);/* IE4- */
+     moz-opacity: 0; /* Mozilla */
+     -khtml-opacity: 0; /* Safari */
+     opacity: 0;  /* general CSS3 */
+     position: absolute;
+     top: 0;
+     width: 100%;
+     z-index: 10;
+   }
+
+/* Стиль накладываемый на всплывающий блок */
+.popup_block {
+     background-color: #fff;
+     position: absolute;
+     width: auto;
+     /*height: 200px;*/
+     left:50%;
+     top:50%;
+     /*min-width: 300px;*/
+     z-index: 11;
+}
+
+/* Блок всплывающей формы */
+#formup_block {
+    border: 1px solid black;
+}
+
+/* Картинка закрытия формы */
+img#formup_close {
+  position: absolute;
+  right: 3px;
+  top: 3px;
+  cursor: pointer;
+}
+
+/* Блок для промежуточных сообщений */
+#formup_message {
+    display: table-cell;
+    height: 200px;
+    width: 300px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Блок для затемнения всплывающей формы*/
+#formup_loader {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background-color:#fff;
+    /*z-index:100;*/
+    opacity: 0.85;
+    text-align: center;
+}
+
+/* Прогресс-бар загрузки файлов */
+#formup_progress {
+    margin-top: 1.2em;
+    vertical-align: middle;
+}
+#formup_loading {
+    display: inline-block;
+    top: -0.55em;
+    position: relative;
+}
+#formup_barborder {
+    display: inline-block;
+    width: 200px;
+    border: 1px solid #ddd;
+    padding: 1px;
+    margin-left: 0.5em;
+    border-radius: 3px;
+    position: relative;
+}
+#formup_bar { background-color: #0080ff; width:0%; height:20px; border-radius: 3px; }
+#formup_percent { position: absolute; display:inline-block; top:3px; left:45%; }
+
+.formup_content {
+  margin: 0 20px 20px 20px;
+}
+
+/* Аннотация к форме под заголовком */
+#formup_block form .abstract {
+    margin-top: 1em;
+    width: 450px;
+    margin-bottom: 1em;
+    color: #898d94;
+}
+
+/**/
+
+.formup_content table {
+  margin-top: 0.5em;
+}
+
+.formup_row  td {
+  padding-top: 0.4em;
+  vertical-align: middle;
+}
+
+.formup_row  td:first-child, .formup_row td.param {
+    padding-right: 0.5em;
+}
+
+.formup_row select, .formup_row input {
+    font: inherit;
+}
+
+.formup_submit td {
+  padding-top: 1em;
+  text-align: right;
+}
+
+/* Ошибки в форме */
+.formup_error {
+  color: red;
+}
+
+.formup_error td {
+  padding-top: 0;
+  padding-bottom: 0.4em;
+}
+
+.formup_error ul, li {
+  margin: 0;
+  padding: 0;
+}
+
+.formup_error ul {
+  list-style: none;
+  font-size: 8pt;
+  color: red;
+}
+
+.formup_more_switch {
+    width: 100%;
+    text-align: center;    
+    color: green;
+    font-size: 8pt;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.formup_more_switch span{
+    cursor: pointer;
+}
+
+.formup_more{
+    display: none;
+}
+
+/* Требование логина и прав */
+#formup_content #login_required {
+  width: 300px;
+  height: 100px;
+  padding-top: 70px;
+  text-align: center;
+}
+
+/* DocumentFile */
+#documentfile_form #id_content{
+  width: 400px;
+}
+
+#documentfile_form #id_persons_count {
+  width: 40px;
+}
+
+#documentfile_form #id_link {
+  width: 380px;
+}
+
+#documentfile_form #id_directlink {
+  width: 380px;
+}
+
+#documentfile_form #id_comment {
+  width: 380px;
+}
+
+/* Document */
+#document_form #id_income_year { width: 5em; }
+#document_form #id_actual_date { width: 70px; }
+#document_form #id_name              { width: 350px; }
+#document_form #id_link              { width: 350px; }
+
+#document_form #id_comment         { width: 350px; }
+#document_form #id_date               { width: 70px; }

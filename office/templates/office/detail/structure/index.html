@@ -1,0 +1,26 @@
+<div id="structure" class="js-active-tab">
+    <table class="suboffices" id="structure">
+        <tbody>
+            <tr class="header">
+                <th></th>
+                {% for year in office.YEARS %}
+                <th class="year">{{ year }}</th>
+                {% endfor %}
+                <th class="rightmargin"></th>
+            </tr>
+
+            <tr class="suboffice">
+                <td></td>
+                {% for year in office.YEARS %}
+                <td class="year_stat spacer"></td>
+                {% endfor %}
+                <td class="rightmargin"></td>
+            </tr>
+
+            {% for suboffice in suboffices %}
+                {% include "office/detail/structure/suboffice/index.html" with office=office suboffice=suboffice year=year %}
+            {% endfor %}
+        </tbody>
+    </table>
+    <div class="office_page_endline"></div>
+</div>

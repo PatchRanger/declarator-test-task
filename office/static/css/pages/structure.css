@@ -1,0 +1,44 @@
+table.suboffices {
+    margin-top: 40px;
+    font-weight: normal;
+}
+
+table.suboffices .rightmargin {
+}
+
+table.suboffices th.year {
+    font-weight: normal;
+    width: 59px;
+    padding-bottom: 26px;
+}
+
+table.suboffices td.spacer {
+    height: 7px
+}
+
+table.suboffices tr.header {
+}
+
+table.suboffices tr.suboffice {
+}
+
+table.suboffices tr.suboffice th {
+    text-align: left;
+    font-weight: normal;
+    padding: 1px 4px 1px 29px;
+}
+
+table.suboffices tr.suboffice:hover {
+    background-color: #e0e4e0;
+}
+
+table.suboffices tr.suboffice td.year_stat{
+    border-left: 1px dashed #d8dcd7;
+    border-right: 1px dashed #d8dcd7;
+    text-align: center;
+}
+
+table.suboffices .rightmargin {
+    width: 30px;
+}
+

@@ -1,0 +1,12 @@
+{% load staticfiles %}
+<td class="year_stat">
+    {% if state == suboffice.DECLARATION_STATE_FULL %}
+    <img src="{% static 'img/office/circle_filled.png' %}">
+    {% elif state == suboffice.DECLARATION_STATE_SOME %}
+    <img src="{% static 'img/office/circle_halffilled.png' %}">
+    {% elif state == suboffice.DECLARATION_STATE_NONE %}
+    <img src="{% static 'img/office/circle_blank.png' %}">
+    {% else %}
+    {#{% elif state == suboffice.DECLARATION_STATE_NO_DOCUMENT %}#}
+    {% endif %}
+</td>

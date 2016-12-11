@@ -1,0 +1,40 @@
+{% extends "office/base.html" %}
+{% load staticfiles %}
+
+{% block body__content %}
+    <div class="page_body">
+        <!-- Хлебные крошки -->
+        <div class="breadcrumbs">
+            <a href="/">Все органы власти</a>
+        </div>
+
+        <div class="office_header">
+            <h1 class="activetext">
+                {{ office.name }}
+            </h1>
+
+            <div class="office_links">
+            </div>
+        </div>
+
+        <div class="office_menu">
+            <ul class="first_level">
+                <li class="element_tab element active">
+                    <div class="container">
+                        {% if suboffices %}
+                        <a id="menu-structure" class="soft js-office-menu" href="#structure">Структура</a>
+                        {% endif %}
+                    </div>
+                </li>
+            </ul>
+        </div>
+
+        <div class="clear"></div>
+
+        <div id="office_content">
+            {% if suboffices %}
+                {% include "office/detail/structure/index.html" with office=office suboffice=suboffice year=year state=state %}
+            {% endif %}
+        </div>
+    </div>
+{% endblock %}

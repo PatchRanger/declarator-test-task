@@ -1,0 +1,17 @@
+<tr class="suboffice">
+    <!--<td class="office_region"></td>-->
+    <th>
+        <a href="{% url 'detail' suboffice.id %}">{{ suboffice.name }}</a>
+    </th>
+
+    {% for year in office.YEARS %}
+        {# @todo Find a way to fetch from dictionary by key #}
+        {% for suboffice_year, state in suboffice.stats_by_year.items %}
+            {% if year == suboffice_year %}
+                {% include "office/detail/structure/suboffice/year_stat.html" with suboffice=suboffice year=year state=state %}
+            {% endif %}
+        {% endfor %}
+    {% endfor %}
+
+    <td class="rightmargin"></td>
+</tr>

@@ -1,0 +1,335 @@
+/* Шапка страницы органа */
+div.office_header {
+    padding-bottom: 15px;
+    border-bottom: 1px dashed #d9dcd7;
+    margin-bottom: 15px;
+}
+
+/* Ссылки на сайт/страницу доходов */
+div.office_links {
+    margin-top: 17px;
+}
+
+/* Главное меню организации */
+.office_menu {
+    height: 47px;
+}
+
+.office_menu ul {
+    list-style-type: none;
+    margin-top: 9px;
+    cursor: default;
+}
+.office_menu ul.first_level > li {
+    float: left;    
+    position: relative;
+    border-bottom: 1px solid #d3d4d2;
+    padding-right: 1px;
+    padding-left: 1px;
+    height: 47px;
+    /*border-radius: 6px 6px 0 0;
+    -moz-border-radius: 6px 6px 0 0;
+    -khtml-border-radius: 6px 6px 0 0;*/
+}
+.office_menu ul.first_level > li .container {
+    text-align: center;
+    background-color: #f3f5f2;
+    padding: 8px 27px 7px 27px;
+    margin: 8px 0px 1px 0px;
+    font-size: 17px;
+}
+.office_menu ul.first_level > li.active {
+    border: 1px solid #d3d4d2;
+    border-bottom-width: 0px;
+}
+.office_menu ul.first_level > li.active .container {
+    font-size: 18px;
+    padding-top: 13px;
+    margin-top: 1px;
+    background-color: transparent;
+}
+.office_menu ul.first_level > li.disabled {
+    color: lightgray;
+}
+.office_menu ul.first_level > li ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    /*width:150px;*/
+    position: absolute;
+    left: 0;
+    top: 30px;
+    display:none;
+    text-align: left;
+}
+.office_menu ul.first_level > li ul li{
+    float: none;
+    margin: 0;
+    width: 250px;
+}
+/*#menu li a{
+    display:block;
+    width:150px;
+    height:20px;
+}*/
+.office_menu ul.first_level > li:hover ul {
+    display:block;  
+}
+
+div.office_page_endline {
+    border-top: 1px solid #fe4339;
+    margin-bottom: 32px;
+    margin-top: 37px;
+}
+
+
+/* статусы поиска */
+.document-searchstatus {
+    float: right;
+    width: 45%;
+    padding: 1em;
+    padding-top: 0.2em;
+    position: relative;
+    font-weight: normal;
+    
+    margin-left: 5%;
+}
+.document-searchstatus-shortdisplay {
+    cursor: default;
+    display: block;
+    width: 12em;
+    height: 2em;
+    color: white;
+    text-align: center;
+    font-size: smaller;
+    vertical-align: middle;
+    position: relative;
+}
+.document-searchstatus-vcenter {
+    line-height: 200%; /* 2em, высота контейнера */
+}
+.document-searchstatus-no-searching .document-searchstatus-shortdisplay {
+    background-color: #C2C2C2;
+}
+.document-searchstatus-searching .document-searchstatus-shortdisplay {
+    background-color: #56A97F;
+}
+.document-searchstatus-not-found .document-searchstatus-shortdisplay {
+    background-color: #9D4D4C;
+}
+.document-searchstatus-not-full-data .document-searchstatus-shortdisplay {
+    background-color: #F3AB5F;
+}
+
+.document-searchstatus-fulltext {
+   padding: 15px;
+   background: white;
+}
+
+.document-searchstatus-popup {
+    display: none;
+    width: 220%;
+    font-size: smaller;
+    color: black;
+    text-align: left;
+    position: absolute;
+    left: 0px;
+    bottom: 100%;
+}
+.document-searchstatus-shortdisplay:hover .document-searchstatus-popup {
+    display: block;
+}
+
+.document-searchstatus-no-searching .document-searchstatus-fulltext {
+    border: 2px solid #C2C2C2;
+}
+.document-searchstatus-searching .document-searchstatus-fulltext {
+    border: 2px solid #56A97F;
+}
+.document-searchstatus-not-found .document-searchstatus-fulltext {
+    border: 2px solid #9D4D4C;
+}
+.document-searchstatus-not-full-data .document-searchstatus-fulltext {
+    border: 2px solid #F3AB5F;
+}
+
+img.document-searchstatus-arrow {
+    display: block;
+    padding: 0px;
+    padding-left: 2em;
+}
+
+
+/* icons */
+.d-icon {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    background: transparent;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.d-icon_empty {
+    cursor: default;
+}
+
+.d-icon-download {
+    background-image: url('/static/img/office/documents/download_gray.png');
+}
+.d-icon-download:hover, .d-icon-download:active, .d-icon-download:focus {
+    background-image: url('/static/img/office/documents/download_red.png');
+}
+.d-icon-download-disabled {
+    background-image: url('/static/img/office/documents/download_lightgray.png');
+}
+
+.d-icon-link {
+    background-image: url('/static/img/office/documents/link_gray.png');
+}
+.d-icon-link:hover, .d-icon-link:active, .d-icon-link:focus {
+    background-image: url('/static/img/office/documents/link_red.png');
+}
+.d-icon-link-disabled {
+    background-image: url('/static/img/office/documents/link_lightgray.png');
+}
+
+.d-icon-question {
+    background-image: url('/static/img/office/documents/question_gray.png');
+}
+.d-icon-question:hover, .d-icon-question:active, .d-icon-question:focus {
+    background-image: url('/static/img/office/documents/question_red.png');
+}
+
+
+.documents_menu table {
+    width: 100%;
+}
+.documents_menu .file-title {
+    width: 100%;
+    background-color: white;
+    text-align: left;
+    padding-left: 1em;
+    cursor: default;
+}
+
+.viewfile-triangle {
+    float: right;
+    display: block;
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-top-color: silver;
+    border-width: 18px 13px 0px;
+    border-style: solid;
+    margin-top: 6px;
+    margin-right: 10px;
+}
+
+.relative {
+    position: relative;
+}
+
+.file-title:hover .viewfile-triangle {
+    border-top-color: black;
+}
+
+
+#ajax_search_results.filelist {
+    display: none;
+    border-width: 5px;
+    border-top-width: 1px;
+    width: 100%;
+    margin-left: -6px;
+}
+
+#ajax_search_results.filelist ul {
+    padding-left: 1em;
+}
+
+.documents_menu #ajax_search_results a {
+    color: #0082AA;
+}
+.documents_menu #ajax_search_results a:hover {
+    color: red;
+}
+
+.documents_menu {
+    width: 100%;
+}
+.frame_view_file {
+    padding: 30px;
+}
+iframe.view-document {
+    width: 100%;
+    height: 500px;
+    border: 5px solid #d8dcd7;
+    border-radius: 9px;
+    -webkit-border-radius: 9px;
+    -moz-border-radius: 9px;
+    background-color: #d1d1d1;
+}
+/*
+li.file-link {
+    cursor: pointer;
+}
+*/
+ul.file-links {
+    padding: 4px 3px !important;
+}
+
+li.file-link {
+    padding: 2px 1em;
+}
+li.file-link a {
+    cursor: pointer;
+}
+li.file-link:hover {
+    background-color: #EEE;
+}
+li.file-link:hover a {
+    color: red !important;
+}
+.download-file-link-wrapper {
+    text-align: right;
+    margin-bottom: 3em;
+}
+
+a.download-file-link {
+    color: black;
+}
+a.download-file-link:hover .d-icon-download {
+    background-image: url('/static/img/office/documents/download_red.png');
+}
+
+a.download-file-link:hover {
+    color: red;
+}
+.download-file-link:hover span.a {
+    text-decoration: underline;
+}
+
+/*--- Добавление/редактирование органа ---*/
+.office_add_edit.container {
+    width: 1015px;
+}
+.office_add_edit h1 {
+    padding-bottom: 25px;
+    font-weight: bold;
+}
+.office_add_edit .ch_widget {
+    display: flex;
+}
+
+.office_add_edit .errorlist {
+    color: red;
+}
+
+.container h3 {
+    font-weight: normal;
+    font-size: 1em;
+}
+
+.title h2 {
+    font-weight: normal;
+    font-size: 1em;
+}

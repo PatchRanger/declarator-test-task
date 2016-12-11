@@ -1,0 +1,58 @@
+<html>
+<head>
+    {% block head %}
+    <title>Министерства РФ</title>
+    <link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Open+Sans:400,700&amp;subset=cyrillic">
+    <link href="/static/css/base.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/common.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/formup.css" type="text/css" rel="stylesheet">
+    {#<script type="text/javascript" src="/static/js/jquery.js"></script>#}
+    {#<script type="text/javascript" src="/static/js/jquery.form.js"></script>#}
+    {#<script type="text/javascript" src="/static/js/all.js"></script>#}
+    {#<script type="text/javascript" src="/static/js/popups.js"></script>#}
+    <link rel="icon" type="image/vnd.microsoft.icon" href="/favicon.ico">
+    {#<script type="text/javascript" src="/static/js/office.js"></script>#}
+    <link href="/static/css/pages/office.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/pages/document.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/pages/archive.css" type="text/css" rel="stylesheet">
+    <link href="/static/css/pages/structure.css" type="text/css" rel="stylesheet">
+    {% endblock %}
+</head>
+<body>
+    {% block body__header %}
+    <div class="header">
+      <div class="content">
+        <div class="title">
+          <a href="/"><img src="/static/img/main/declarator-logo.png"></a>
+        </div>
+        <ul class="main_menu">
+          <li class="element"><a class="soft" href="/about/">О проекте</a></li>
+          <li class="element"><a class="soft" href="/how_to_help/">Как помочь?</a></li>
+          <li class="element"><a class="soft" href="/add_declaration/">Добавить декларацию</a></li>
+          <li class="element">
+            <form class="lang_switcher" action="/change_lang/" method="POST">
+                <input type="hidden" name="language" value="en">
+                <input type="hidden" name="next" value="">
+                <button class="lang_switcher soft"><img src="/static/img/lang/en30.png"></button>
+            </form>
+          </li>
+        </ul>
+        {% comment %}
+        <div class="auth">
+          <!-- img src="/static/img/main/key.png" -->
+          <div id="user-panel" class="auth_block">
+            <a class="soft" href="/accounts/login/?next=/office/589">
+              Войти
+            </a>
+          </div>
+          <div class="auth_block">
+            <a class="soft" href="/accounts/reset-password/">Напомнить пароль</a>
+          </div>
+        </div>
+        {% endcomment %}
+      </div>
+    </div>
+    {% endblock %}
+    {% block body__content %}{% endblock %}
+</body>
+</html>
