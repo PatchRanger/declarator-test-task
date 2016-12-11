@@ -3,7 +3,7 @@
 ## Введение
 Этот репозиторий содержит исходный код выполненного тестового задания для Transparency International.
 Ссылка на вакансию и тестовое задание: http://transparency.org.ru/deklaratcii/vnimanie-vakansiia-vedushchii-razrabotchik-proekta .
-Ссылка на сайт на основе репозитория: http://declarator-patchranger.c9users.io:8080/office/589 . Для просмотра свяжитесь со мной - сервер сайта должен быть включен вручную, отключается при несипользовании.
+Ссылка на сайт на основе репозитория: http://declarator-patchranger.c9users.io:8080/office/589 . Для просмотра свяжитесь со мной - сервер сайта должен быть включен вручную, отключается при неиспользовании.
 
 ![Фронтенд](https://raw.githubusercontent.com/PatchRanger/declarator-test-task/master/PatchRanger_declarator-test-task_frontend.png)
 ![Бэкенд](https://raw.githubusercontent.com/PatchRanger/declarator-test-task/master/PatchRanger_declarator-test-task_backend.png)
